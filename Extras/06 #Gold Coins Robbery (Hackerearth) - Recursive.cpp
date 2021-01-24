@@ -4,6 +4,7 @@ using namespace std;
 
 // Gold Coins Robbery - Recursive Approach
 // Codathon - Inter NIT Coding Competition 2021 (HackerEarth)
+// https://www.hackerearth.com/problem/algorithm/question-4-61/
 
 ll n_copy;
 pair<ll, ll> rec(ll a[], ll b[], ll c, ll id, ll r1, ll r2, bool t) {
