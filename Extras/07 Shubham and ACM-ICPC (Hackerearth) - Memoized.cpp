@@ -3,6 +3,7 @@ using namespace std;
 #define ll              long long int
 
 // Shubham and ACM-ICPC - Memoized Approach
+// Codathon - Inter NIT Coding Competition 2021 (HackerEarth)
 // https://www.hackerearth.com/problem/algorithm/question-3-112/
 
 ll ans = 1, ncopy;
