@@ -2,7 +2,7 @@
 using namespace std;
 #define ll              long long int
 
-// Optimal BST
+// Optimal BST Successful Searches
 // https://www.geeksforgeeks.org/optimal-binary-search-tree-dp-24/
 
 int main() {   
