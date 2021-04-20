@@ -13,7 +13,7 @@ int main() {
     // #endif 
     ll n;
     cin >> n;
-    ll p[n], q[n];
+    ll p[n];
     for(ll i = 0 ; i < n ; i++) 
         cin >> p[i];
     ll pref[n] = {p[0]};
