@@ -40,12 +40,13 @@ int main() {
             }
         }
     }
-    for(ll i = 0 ; i < n ; i++) {
-        for(ll j = 0 ; j < n ; j++) {
-            cout << dp[i][j] << " ";
-        }
-        cout << endl;
-    }
+    // Bottom Up Array
+    // for(ll i = 0 ; i < n ; i++) {
+    //     for(ll j = 0 ; j < n ; j++) {
+    //         cout << dp[i][j] << " ";
+    //     }
+    //     cout << endl;
+    // }
     cout << dp[0][n - 1] << '\n';
     return 0;
 }
