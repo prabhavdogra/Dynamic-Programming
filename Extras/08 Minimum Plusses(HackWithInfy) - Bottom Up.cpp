@@ -8,8 +8,8 @@ using namespace std;
 // Q.  Given an equation "x=y", for example, "111=12", you need to add pluses inside x to make the equation correct. 
 //     In our example "111=12", we can add one plus "11+1=12" and the equation becomes correct. You need to find the
 //     minimum number of pluses to add to x to make the equation correct. If there is no answer print -1.
-// Note:
-// The value of y won't exceed 5000. The numbers in the corrected equation may contain arbitrary amounts of leading zeros.
+//     Note:
+//     The value of y won't exceed 5000. The numbers in the corrected equation may contain arbitrary amounts of leading zeros.
 
 // Input Format
 // The first line contains a string, A as described in the problem statement.
