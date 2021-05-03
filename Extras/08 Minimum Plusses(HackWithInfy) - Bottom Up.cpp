@@ -24,11 +24,16 @@ void solve() {
 	string a, s, b;
 	cin >> s;
 	ll id = 0;
-	while(s[id] != '=') a.push_back(s[id]), id++;
+	while(s[id] != '=') 
+		a.push_back(s[id]), id++;
 	id++;
-	while(id != s.length()) b.push_back(s[id]), id++;
+	while(id != s.length()) 
+		b.push_back(s[id]), id++;
 	ll y = stoll(b), n = a.length();
-	if(b == a) {cout << 0 << endl; return;}
+	if(b == a) {
+		cout << 0 << endl;
+		return;
+	}
 	vector<vector<ll>> dp(n + 1, vector<ll> (y + 1, 1e9));
 	dp[0][0] = 0;
 	for(ll i = 1 ; i <  n + 1 ; i++) {
@@ -45,13 +50,15 @@ void solve() {
 	}
 	// forp(i, 0, n + 1) {
 	// 	forp(j, 0, y + 1) {
-	// 		if(dp[i][j] != INF) cout << dp[i][j] << " ";
+	// 		if(dp[i][j] != 1e9) cout << dp[i][j] << " ";
 	// 		else cout << I << " ";
 	// 	}		
 	// 	cout << endl;
 	// }
-	if(dp[n][y] != 1e9) cout << dp[n][y] - 1 << endl;
-	else cout << -1 << endl;
+	if(dp[n][y] != 1e9) 
+		cout << dp[n][y] - 1 << endl;
+	else 
+		cout << -1 << endl;
 }
 
 int main() {
