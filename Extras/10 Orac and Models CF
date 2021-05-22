@@ -1,0 +1,32 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define ll              long long int
+
+// Orac and Models
+// https://codeforces.com/problemset/problem/1350/B
+
+int main() {   
+    ios::sync_with_stdio(0); cin.tie(0);
+    ll T;
+    cin >> T;
+    while(T--) {
+        ll n, temp, ans = 1;
+        cin >> n;
+        vector <ll> a(n + 1), dp(n + 1, 1);
+        for(ll i = 1 ; i < n + 1 ; i++)
+            cin >> a[i];
+        for(ll i = 2 ; i < n + 1 ; i++) {
+            for(ll j = 1 ; j * j <= i ; j++) {
+                if(i % j == 0 && a[j] < a[i]) 
+                    dp[i] = max(dp[i], 1 + dp[j]);
+                if(i % j == 0 && a[i/j] < a[i]) 
+                    dp[i] = max(dp[i], 1 + dp[i/j]);
+            }
+        }
+        // for(ll i = 1 ; i < n + 1 ; i++)
+        //     cout << dp[i] << " ";
+        // cout << '\n';
+        cout << *max_element(dp.begin() + 1, dp.end()) << '\n';
+    }
+    return 0;
+}
