@@ -18,7 +18,7 @@ using namespace std;
 // 1 <= len(A) <= 10^3
 
 // Sample Input |	Sample Output	     |              Explanation
-// 23=5         |   	1                |  It can be accomplished with only one "+" by doing "2+3=5".
+// 23=5         |   	1                    |  It can be accomplished with only one "+" by doing "2+3=5".
 
 void solve() {
 	string a, s, b;
